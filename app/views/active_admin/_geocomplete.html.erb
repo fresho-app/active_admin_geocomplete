@@ -8,9 +8,9 @@
  %>
 
 <% if https %>
- <script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places<%= key_param %>"></script>
+ <script src="https://maps.googleapis.com/maps/api/js?libraries=places<%= key_param %>"></script>
 <% else %>
-  <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places<%= key_param %>"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?libraries=places<%= key_param %>"></script>
 <% end %>
 
 <%= form.inputs "Location", class: "aageocomplete_wrapper" do %>
