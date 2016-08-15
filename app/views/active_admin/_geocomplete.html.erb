@@ -4,7 +4,7 @@
  lat = "latitude" if lat.nil?
  https = false if https.nil?
  map_id = "map_canvas" if map_id.nil?
- key_param = api_key.present? ? "&key=#{api_key}".html_safe : ''
+ key_param = local_assigns[:api_key] && api_key.present? ? "&key=#{api_key}".html_safe : ''
  %>
 
 <% if https %>
